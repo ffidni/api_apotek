@@ -1,6 +1,7 @@
+import NextCors from "nextjs-cors";
 import { conn } from "../../../utils/db";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   await NextCors(req, res, {
     methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
     origin: "*",
