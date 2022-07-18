@@ -1,6 +1,5 @@
 ## Requirement
 - Node.js
-- Next.js
 
 ## Instalasi
 - Clone
