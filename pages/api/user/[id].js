@@ -51,7 +51,7 @@ function del(req, res) {
 
 function get(req, res) {
   const { id } = req.query;
-  conn.query("SELECT * FROM user WHERE id = ?", [id], (err, result) => {
+  conn.query("SELECT * FROM user WHERE id_user = ?", [id], (err, result) => {
     if (err) res.status(400).json({ status: 400, response: err.message });
     else {
       res.status(200).json({ status: 200, response: result[0] });
